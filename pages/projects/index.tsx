@@ -42,7 +42,10 @@ const ProjectItem = ({ title, description, link, images, technologies }: Project
               showThumbs={false}
             >
               {images.map((image) => (
-                <div className={styles.project__image}>
+                <div 
+                  key={image}
+                  className={styles.project__image}
+                >
                     <img 
                       src={image} 
                       alt={title} 
