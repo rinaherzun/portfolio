@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 80%;
 }
 
 .project {
@@ -21,6 +21,7 @@
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
+    width: 46%;
 }
 
 .description__card {
@@ -52,6 +53,11 @@
     text-align: center;
 }
 
+.project__image > img {
+    width: 100%;
+    height: 100%;
+}
+
 .project__link  {
     background-color: var(--background-color);
     color: var(--accent-color);
@@ -70,7 +76,7 @@
     opacity: 0.8;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .projects {
         width: 90%;
         flex-direction: column;
