@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useRouter } from "next/router";
 
 import Head from "next/head";
 import Link from "next/link";
@@ -9,6 +10,8 @@ import { FiGithub } from "react-icons/fi";
 
 import styles from "./Layout.module.css";
 
+import translations from "../../pages/assets/translations.json";
+
 type Props = {
   title?: string;
   className?: string;
@@ -18,8 +21,11 @@ const Layout: React.FunctionComponent<Props> = ({
   children,
   className = "",
   title = "Rina Hernández"
-}) => (
-  <div>
+}) => {
+  const { locale, locales, asPath } = useRouter();
+  const tr = translations.navbar.find((v) => v.locale == locale);
+
+  return <div>
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
@@ -28,33 +34,57 @@ const Layout: React.FunctionComponent<Props> = ({
     </Head>
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        <ul>
-          <li>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/projects">
-              <a>Projects</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/certificates">
-              <a>Certificates</a>
-            </Link>
-          </li>
-          <li>
-            <a 
-              className={styles.button__resume} 
-              href="/resume.pdf" 
-              target="_blank" 
-              rel="noreferrer"
-            >
-              Resume
-            </a>
-          </li>
-        </ul>
+        <div>
+          {
+              locales.map((l, i) => {
+                  return <span
+                      key={i}
+                      className={styles.locale}
+                  >
+                    <span className={l === locale ? styles.selected__locale : styles.locale} >
+                      <Link
+                          href={asPath}
+                          locale={l}
+                      >
+                        {
+                            l.toString().toUpperCase()
+                        }
+                      </Link>
+                    </span>
+                    { i < locales.length - 1 && <span> | </span> }
+                  </span>
+              })
+          }
+        </div>
+        <div>
+          <ul>
+            <li>
+              <Link href="/">
+                <a>{tr.home}</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/projects">
+                <a>{tr.projects}</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/certificates">
+                <a>{tr.certificates}</a>
+              </Link>
+            </li>
+            <li>
+              <a 
+                className={styles.button__resume} 
+                href={`/${tr.resume_name}`}
+                target="_blank" 
+                rel="noreferrer"
+              >
+                {tr.resume}
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main className={styles.main}>
@@ -78,7 +108,7 @@ const Layout: React.FunctionComponent<Props> = ({
         </_FooterSocialButton>
       </footer>
   </div>
-);
+};
 
 const _FooterSocialButton = ({children, to}) => {
     return <a

@@ -1,0 +1,234 @@
+{
+    "navbar": [
+        {
+            "locale": "en",
+            "home": "Home",
+            "projects": "Projects",
+            "certificates": "Certificates",
+            "resume": "Resume",
+            "resume_name": "resume.pdf"
+        },
+        {
+            "locale": "es",
+            "home": "Inicio",
+            "projects": "Proyectos",
+            "certificates": "Certificados",
+            "resume": "Currículo",
+            "resume_name": "cv.pdf"
+        }
+    ],
+    "homepage": [
+        {
+            "locale": "en",
+            "hiMyNameIs": "Hi, my name is",
+            "hiMyNameIsDesc": "I am a Business Managament graduate with experience in freelancing projects and personal small scale business management. Confident leader and enthusiastic communicator. Avid learner in technology skills especially interested in data science and renewable resources. Self motivated, therefore, effective at completing tasks with minimal supervision.",
+            "skills": "Skills",
+            "skillsDesc": "Asana, Wordpress, Google Calendar, Power BI, SQL, Javascript, HTML, CSS, Hubspot, Python, Sprout Social, Zoomph, Office, Project Management, Strong Critical Thinking, Analytical Thinking, Problem Solving, Interpersonal Communication, Digital Advertising.",
+            "languages": "Languages",
+            "languagesDesc": "Spanish, English",
+            "interests": "Interests",
+            "interestsDesc": "Computer Science, Gaming, Crypto, Coding, Renewable Resources, Animal Protection, Fintech."
+        },
+        {
+            "locale": "es",
+            "hiMyNameIs": "Hola, mi nombre es",
+            "hiMyNameIsDesc": "Licenciada en Administración de Empresas con experiencia en marketing, gestión empresarial y programación. Líder segura y comunicadora entusiasta. Me apasionan especialmente la tecnología y el marketing. Mi meta es ayudar al desarrollo de mi comunidad.",
+            "skills": "Habilidades",
+            "skillsDesc": "Publicidad digital, Google Ads, Asana, Sprout Social, Zoomph, Office, Hubspot, Google Calendar, Power BI, SQL, Javascript, HTML, CSS, Wordpress, Python, Project Management, Pensamiento crítico, Pensamiento analítico, Resolución de problemas, Comunicación interpersonal.",
+            "languages": "Idiomas",
+            "languagesDesc": "Español, Inglés",
+            "interests": "Intereses",
+            "interestsDesc": "Marketing Digital, SEO, Programación, Recursos renovables, Protección de animales, Fintech."
+        }
+    ],
+    "projects": [
+        {
+            "locale": "en",
+            "title": "Projects",
+            "projects": [
+                {
+                    "title": "Knights' Tracker",
+                    "description": "Social media tracker to manage the growth of all social media platforms that the Knights is present.",
+                    "images_url": [
+                        "https://i.ibb.co/6NZBTwQ/knights.png",
+                        "https://i.ibb.co/YhbgpqX/knights-social.png",
+                        "https://i.ibb.co/rkVjNpq/unknown.png"
+                    ],
+                    "url": ""
+                },
+                {
+                    "title": "Meraki MarketPlace",
+                    "description": "Online marketplace for the city of Tegucigalpa, Honduras, which allows job creation and add competitive advantages to small and medium-sized companies in the city.",
+                    "images_url": [
+                        "https://i.ibb.co/7NFLDxt/meraki.png",
+                        "https://i.ibb.co/RYJjkP1/meraki-1.png"
+                    ],
+                    "url": ""
+                },
+                {
+                    "title": "Artezar",
+                    "description": "It is a free virtual bazaar where you can find a wide variety of original products craft, available to residents in the Tegucigalpa, Honduras.",
+                    "images_url": [
+                        "https://i.ibb.co/41YJ9CS/artezar.png",
+                        "https://i.ibb.co/cgXYXPc/artezar-3.png"
+                    ],
+                    "url": ""
+                },
+                {
+                    "title": "Scential Care",
+                    "description": "An online store specialized in the production of natural oils, moisturizers, shampoo, handmade soaps and veil masks for cosmetic use for skin and hair care, providing the best natural products to our potential consumers.",
+                    "images_url": [
+                        "https://i.ibb.co/GVJp8XR/scential-care.png",
+                        "https://i.ibb.co/HGX6VSR/scential-care-1.png",
+                        "https://i.ibb.co/WDMT418/scential-care-2.png"
+                    ],
+                    "url": ""
+                },
+                {
+                    "title": "Rozen",
+                    "description": "Rozen is an upcoming startup that focus in the development of affordable atmospheric water generators for vulnerable communities.",
+                    "images_url": [
+                        "https://i.ibb.co/LQH9RCr/unknown-1.png",
+                        "https://i.ibb.co/PQNHxvN/rozen.png"
+                    ],
+                    "url": ""
+                },
+                {
+                    "title": "Lu's Bakery",
+                    "description": "Manager of Lu's Pet Bakery, personal small scale business. Lu's Pet Bakery is an organic bakery that specializes in personalized treats and baking products for pets. Lu's Management involves activities such as accounting, financial forecasting, human resources management and supervising production. Instagram: @lusbakeryhn",
+                    "images_url": [
+                        "https://i.ibb.co/xStWj4M/rozen-1.png",
+                        "https://i.ibb.co/ZMQgPQs/lus-removebg-preview.png"
+                    ],
+                    "url": "https://www.instagram.com/lusbakeryhn/"
+                }
+            ]
+        },
+        {
+            "locale": "es",
+            "title": "Proyectos",
+            "projects": [
+                {
+                    "title": "Knights' Tracker",
+                    "description": "Tracker de redes sociales para administrar el crecimiento de todas las plataformas de redes sociales en las que los Knights están presentes.",
+                    "images_url": [
+                        "https://i.ibb.co/6NZBTwQ/knights.png",
+                        "https://i.ibb.co/YhbgpqX/knights-social.png",
+                        "https://i.ibb.co/rkVjNpq/unknown.png"
+                    ],
+                    "url": ""
+                },
+                {
+                    "title": "Meraki MarketPlace",
+                    "description": "Marketplace en línea para la ciudad de Tegucigalpa, Honduras, que permite generar empleos y sumar ventajas competitivas a las pequeñas y medianas empresas de la ciudad.",
+                    "images_url": [
+                        "https://i.ibb.co/7NFLDxt/meraki.png",
+                        "https://i.ibb.co/RYJjkP1/meraki-1.png"
+                    ],
+                    "url": ""
+                },
+                {
+                    "title": "Artezar",
+                    "description": "Es un bazar virtual gratuito donde se puede encontrar una gran variedad de productos artesanales originales, disponibles para los residentes en Tegucigalpa, Honduras.",
+                    "images_url": [
+                        "https://i.ibb.co/41YJ9CS/artezar.png",
+                        "https://i.ibb.co/cgXYXPc/artezar-3.png"
+                    ],
+                    "url": ""
+                },
+                {
+                    "title": "Scential Care",
+                    "description": "Una tienda en línea especializada en la elaboración de aceites naturales, humectantes, shampoo, jabones artesanales y mascarillas velo de uso cosmético para el cuidado de la piel y el cabello, brindando los mejores productos naturales a nuestros potenciales consumidores.",
+                    "images_url": [
+                        "https://i.ibb.co/GVJp8XR/scential-care.png",
+                        "https://i.ibb.co/HGX6VSR/scential-care-1.png",
+                        "https://i.ibb.co/WDMT418/scential-care-2.png"
+                    ],
+                    "url": ""
+                },
+                {
+                    "title": "Rozen",
+                    "description": "Rozen es una nueva empresa que se enfoca en el desarrollo de generadores de agua atmosférica asequibles para comunidades vulnerables.",
+                    "images_url": [
+                        "https://i.ibb.co/LQH9RCr/unknown-1.png",
+                        "https://i.ibb.co/PQNHxvN/rozen.png"
+                    ],
+                    "url": ""
+                },
+                {
+                    "title": "Lu's Bakery",
+                    "description": "Gerente de Lu's Pet Bakery, negocio personal a pequeña escala. Lu's Pet Bakery es una panadería orgánica que se especializa en golosinas personalizadas y productos horneados para mascotas. La gestión de Lu implica actividades como contabilidad, previsión financiera, gestión de recursos humanos y supervisión de la producción. Instagram: @lusbakeryhn",
+                    "images_url": [
+                        "https://i.ibb.co/xStWj4M/rozen-1.png",
+                        "https://i.ibb.co/ZMQgPQs/lus-removebg-preview.png"
+                    ],
+                    "url": "https://www.instagram.com/lusbakeryhn/"
+                }
+            ]
+        }
+    ],
+    "certificates": [
+        {
+            "locale": "en",
+            "title": "Certificates",
+            "certificates": [
+                {
+                    "title": "Basic Algorithms and Logical Thinking Course",
+                    "url": "https://platzi.com/p/rinaherzun447/curso/2218-pensamiento-logico/diploma/detalle/",
+                    "logo": "https://static.platzi.com/media/achievements/badge-algoritmos-pensamiento-logico-4b7a05c5-470a-41e6-bcd9-4693f4207a03.png"
+                },
+                {
+                    "title": "Basic JavaScript Course",
+                    "url": "https://platzi.com/p/rinaherzun447/curso/1814-basico-javascript/diploma/detalle/",
+                    "logo": "https://static.platzi.com/media/achievements/badge-basicojs-e2ead888-428e-4f55-962c-8894aeaeacda.png"
+                },
+                {
+                    "title": "Basic Python Course",
+                    "url": "https://platzi.com/p/rinaherzun447/curso/1937-python/diploma/detalle/",
+                    "logo": "https://static.platzi.com/media/achievements/badge-basico-python-bdcc67b3-031d-4dce-8e78-5699fb243149.png"
+                },
+                {
+                    "title": "Introduction to the Web: History and Functioning of the Internet",
+                    "url": "https://platzi.com/p/rinaherzun447/curso/2053-introweb/diploma/detalle/",
+                    "logo": "https://static.platzi.com/media/achievements/badge-introduccion-web-historia-internet-4c18b86e-86f0-4ea0-aa16-5ed1cf53be25.png"
+                },
+                {
+                    "title": "Free Basic Programming Course",
+                    "url": "https://platzi.com/p/rinaherzun447/curso/1050-programacion-basica/diploma/detalle/",
+                    "logo": "https://static.platzi.com/media/achievements/1050-bfb74f83-8e2e-4ff7-a66d-77d2c0067908.png"
+                }
+            ]
+        },
+        {
+            "locale": "es",
+            "title": "Certificados",
+            "certificates": [
+                {
+                    "title": "Curso Básico de Algoritmos y Pensamiento Lógico",
+                    "url": "https://platzi.com/p/rinaherzun447/curso/2218-pensamiento-logico/diploma/detalle/",
+                    "logo": "https://static.platzi.com/media/achievements/badge-algoritmos-pensamiento-logico-4b7a05c5-470a-41e6-bcd9-4693f4207a03.png"
+                },
+                {
+                    "title": "Curso Básico de JavaScript",
+                    "url": "https://platzi.com/p/rinaherzun447/curso/1814-basico-javascript/diploma/detalle/",
+                    "logo": "https://static.platzi.com/media/achievements/badge-basicojs-e2ead888-428e-4f55-962c-8894aeaeacda.png"
+                },
+                {
+                    "title": "Curso Básico de Python",
+                    "url": "https://platzi.com/p/rinaherzun447/curso/1937-python/diploma/detalle/",
+                    "logo": "https://static.platzi.com/media/achievements/badge-basico-python-bdcc67b3-031d-4dce-8e78-5699fb243149.png"
+                },
+                {
+                    "title": "Curso de Introducción a la Web: Historia y Funcionamiento de Internet",
+                    "url": "https://platzi.com/p/rinaherzun447/curso/2053-introweb/diploma/detalle/",
+                    "logo": "https://static.platzi.com/media/achievements/badge-introduccion-web-historia-internet-4c18b86e-86f0-4ea0-aa16-5ed1cf53be25.png"
+                },
+                {
+                    "title": "Curso Gratis de Programación Básica",
+                    "url": "https://platzi.com/p/rinaherzun447/curso/1050-programacion-basica/diploma/detalle/",
+                    "logo": "https://static.platzi.com/media/achievements/1050-bfb74f83-8e2e-4ff7-a66d-77d2c0067908.png"
+                }
+            ]
+        }
+    ]
+}

@@ -1,6 +1,9 @@
+import { useRouter } from "next/router";
 import Layout from "../../components/Layout/Layout";
 
 import styles from "./Certificates.module.css";
+
+import translations from "../assets/translations.json";
 
 type Certificate = {
   title: string,
@@ -35,38 +38,29 @@ const CertificateItem = ({ title, link, logo }: Certificate) => {
   );
 }
 
-const CertificatesPage = () => (
-  <Layout title="Certificates | Rina Hernández" >
-    <h1 className={styles.h1}>Certificates</h1>
+const CertificatesPage = () => {
+  const { locale } = useRouter();
+  const title = translations.certificates.find((v) => v.locale == locale).title;
+  return <Layout title="Certificates | Rina Hernández" >
+    <h1 className={styles.h1}>{title}</h1>
     <div className={styles.certificates}>
-      <CertificateItem
-        title="Basic Algorithms and Logical Thinking Course"
-        logo="https://static.platzi.com/media/achievements/badge-algoritmos-pensamiento-logico-4b7a05c5-470a-41e6-bcd9-4693f4207a03.png"
-        link="https://platzi.com/p/rinaherzun447/curso/2218-pensamiento-logico/diploma/detalle/ "
-      />
-      <CertificateItem
-        title="Basic JavaScript Course"
-        logo="https://static.platzi.com/media/achievements/badge-basicojs-e2ead888-428e-4f55-962c-8894aeaeacda.png"
-        link="https://platzi.com/p/rinaherzun447/curso/1814-basico-javascript/diploma/detalle/"
-      />
-      <CertificateItem
-        title="Basic Python Course"
-        logo="https://static.platzi.com/media/achievements/badge-basico-python-bdcc67b3-031d-4dce-8e78-5699fb243149.png"
-        link="https://platzi.com/p/rinaherzun447/curso/1937-python/diploma/detalle/"
-      />
-      <CertificateItem
-        title="Introduction to the Web: History and Functioning of the Internet"
-        logo="https://static.platzi.com/media/achievements/badge-introduccion-web-historia-internet-4c18b86e-86f0-4ea0-aa16-5ed1cf53be25.png"
-        link="https://platzi.com/p/rinaherzun447/curso/2053-introweb/diploma/detalle/"
-      />
-      <CertificateItem
-        title="Free Basic Programming Course"
-        logo="https://static.platzi.com/media/achievements/1050-bfb74f83-8e2e-4ff7-a66d-77d2c0067908.png"
-        link="https://platzi.com/p/rinaherzun447/curso/1050-programacion-basica/diploma/detalle/"
-      />
+      {
+          translations
+            .certificates
+            .filter((hp) => hp.locale === locale)[0]
+            .certificates
+            .map((c, i) => (
+              <CertificateItem
+                key={c.title}
+                title={c.title}
+                logo={c.logo}
+                link={c.url}
+              />
+            ))
+        }   
     </div>
 
   </Layout>
-);
+};
 
 export default CertificatesPage;

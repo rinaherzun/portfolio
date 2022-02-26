@@ -4,5 +4,9 @@ module.exports = {
     domains: [
       "i.ibb.co"
     ],
+  },
+  i18n: {
+    locales: ["en", "es"],
+    defaultLocale: "en",
   }
 }
